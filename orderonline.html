@@ -1,0 +1,159 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="CodeHim">
+        <title>Order Parts Online</title>
+        
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+          
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://www.w3schools.com/lib/w3.js"></script>  
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="style1.css">
+        <!-- Demo CSS (No need to include it into your project) -->
+        <link rel="stylesheet" href="css/demo.css">
+      
+      </head>
+      <body>
+    
+      
+          
+     <main>
+         <!-- Add Items -->
+         
+    <figure class="snip">                <!-- first -->
+        <h4>Car batteries</h4>
+        <div class="image">
+          <img class="slide1" src="./img/battery2.jpg" />
+             </div>
+        
+        <figcaption>
+          <p>Car batteries</p>    
+          <div class="price">
+            <s>ZAR1204.00</s><div class="real" data-price="1000.00">ZAR1000</div>
+          </div>
+        </figcaption>
+        <a class="add-to-cart" href="#">Add to Cart</a>
+      </figure>
+      
+      <figure class="snip">                <!-- second -->
+        <h4>Brakes</h4>
+        <div class="image">
+          <img class="slide2" src="./img/brakes.jpg" />
+          
+        </div>
+        <figcaption>
+          <p>Car braking system</p>    
+          <div class="price">
+            <s>ZAR2229.00</s><div class="real" data-price="1924.00">ZAR1924.00</div>
+          </div>
+        </figcaption>
+        <a class="add-to-cart" href="#">Add to Cart</a>
+      </figure>
+      
+      <figure class="snip">               <!-- third -->
+        <h4>Airvalve</h4>
+        <div class="image">
+          <img class="slide3" src="./img/Airvalve.jpg" />
+          
+        </div>
+        
+        <figcaption>
+          <p>Airvalve</p>    
+          <div class="price">
+            <s>ZAR3222.00</s><div class="real" data-price="3114.55">ZAR3114.55</div>
+          </div>
+        </figcaption>
+        <a class="add-to-cart" href="#">Add to Cart</a>
+      </figure>
+      
+      <figure class="snip">               <!-- Fourth -->
+        <h4>Airdryer</h4>
+        <div class="image">
+          <img class="slide4" src="./img/Airdryer.jpg" />
+          
+        </div>
+        
+        <figcaption>
+          <p>Airdryer</p>    
+          <div class="price">
+            <s>ZAR3535.00</s><div class="real" data-price="3226.00">ZAR3226.00</div>
+          </div>
+        </figcaption>
+        <a class="add-to-cart" href="#">Add to Cart</a>
+      </figure>
+      <a class="cart" href="javascript:void(0);" title="Your Cart">
+        <img src="./img/cart.png" />
+        <span id="count-item" data-count="0">0 item</span>
+      </a>
+      <!-- --------------------Check out ---------------- -->
+      <div class="checkout-container">
+        <div class="table">
+        <span class="empty">Your cart is empty!</span>
+    
+        <div class="col1-name"></div>
+        <div class="col2-price"></div>
+        </div>
+        <div class="bin"><span>Clear All</span><img id="bin" src="./img/delete.png" style="width:40px" /></div>
+        <div class="total">
+          <div class="total-text">Total :</div>
+          <div class="total-amount">ZAR 0</div>
+        </div>
+        <div class="checkout" onclick="document.getElementById('id01').style.display='block'">Check out</div>
+        
+      </div>
+      
+              <!-- -----------------Bill------------- -->
+     <div id="id01" class="modal">
+      <div class="wrapper">
+        <div class="bill-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+        <h1 class="box-title">Checkout</h1>
+        <div class="price-total">
+          <span>PAY</span>
+          <div class="pay-last">ZAR 0</div>
+        </div>
+        <form>
+          
+          <div class="form-text">
+            <label>Card Number</label>
+            <input name="card-number" type="text" required>
+          </div>
+          <div class="form-text">
+            <label>Card Verification Value</label>
+            <input name="name" type="text" placeholder="CVV" required>
+          </div>
+          <div class="form-text" id="col01">
+            <label>Expiry Date</label>
+            <input name="card-number" type="text" placeholder="MM/YY" maxlength="3" required>
+          </div>
+          <div class="form-text"  id="col02">
+            <label>Coupon Code</label>
+            <input name="card-number" type="text">
+          </div>
+          
+          <button id="end">PAY NOW</button>
+        </form>
+          <button id="coupon">Get coupon code</button>
+        </div>
+      </div>
+     </div> 
+         
+         <!-- END  -->
+     </main>
+     
+          
+      <footer class="credit"><a href="index.html">Go back to main page</a></footer>
+      
+    
+     <script  src="script1.js"></script>
+          
+      </body>
+    </html>
+
+
+</html>

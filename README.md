@@ -29,3 +29,7 @@ Create a new branch: git checkout -b feature/your-feature.
 Make your changes and commit them: git commit -m 'Add your feature'.
 Push to the branch: git push origin feature/your-feature.
 Submit a pull request detailing your changes.
+
+License
+the license is from domain name tunnex.tech
+
